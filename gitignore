@@ -1,0 +1,10 @@
+# VIM
+.*.swo
+.*.swp
+.idea
+
+#OS X Leftover Crap
+._*
+.DS_Store
+
+.cvsignore
