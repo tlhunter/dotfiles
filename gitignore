@@ -1,10 +1,17 @@
 # VIM
 .*.swo
+.swo
 .*.swp
 .idea
+.swp
 
 #OS X Leftover Crap
 ._*
 .DS_Store
 
 .cvsignore
+
+npm-debug.log
+
+jasmine-*.js
+JasmineAdapter-*.js

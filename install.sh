@@ -7,7 +7,7 @@ ln -s ~/.dotfiles/gitignore ~/.gitignore
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 
 # Linux Only
-ln -s ~/.dotfiles/Xmodmap ~/.Xmodmap
-ln -s ~/.dotfiles/xinitrc ~/.xinitrc
+#ln -s ~/.dotfiles/Xmodmap ~/.Xmodmap
+#ln -s ~/.dotfiles/xinitrc ~/.xinitrc
 
 # OS X Only

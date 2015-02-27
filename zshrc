@@ -68,4 +68,6 @@ alias ag='/usr/bin/ag'
 
 alias epoch='date +%s'
 
+alias o='xdg-open'
+
 if [ "$TMUX" = "" ]; then tmux attach -t main || tmux new -s main; fi
