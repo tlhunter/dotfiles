@@ -1,5 +1,1 @@
-tint2 &
-
-feh --bg-scale ~/wallpaper/debian1.png &
-
-xcompmgr -c -t-10 -r10 -o.55 &
+/home/tlhunter/.config/openbox/autostart
