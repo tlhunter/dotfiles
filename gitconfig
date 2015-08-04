@@ -9,6 +9,6 @@
 	email = me@thomashunter.name
 	name = Thomas Hunter II
 [push]
-	default = simple
+	default = current
 [core]
 	excludesfile = /home/tlhunter/.gitignore
