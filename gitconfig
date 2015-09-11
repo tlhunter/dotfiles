@@ -1,14 +1,20 @@
 [color]
-        diff = auto
-        status = auto
-        branch = auto
+	diff = auto
+	status = auto
+	branch = auto
+
 [format]
-        pretty = "Commit:  %C(yellow)%H%nAuthor:  %C(green)%aN <%aE>%nDate:    (%C(red)%ar%Creset) %ai%nSubject: %s%n%n%b"
+	pretty = "Commit:  %C(yellow)%H%nAuthor:  %C(green)%aN <%aE>%nDate:    (%C(red)%ar%Creset) %ai%nSubject: %s%n%n%b"
 
 [user]
 	email = me@thomashunter.name
 	name = Thomas Hunter II
+
 [push]
 	default = current
+
 [core]
 	excludesfile = /home/tlhunter/.gitignore
+
+[tig]
+	line-graphics = "utf-8"
