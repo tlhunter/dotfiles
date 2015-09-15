@@ -70,4 +70,12 @@ alias epoch='date +%s'
 
 alias o='xdg-open'
 
-if [ "$TMUX" = "" ]; then tmux attach -t main || tmux new -s main; fi
+# If not running tmux, run tmux and attach to a session named "main"
+if [ "$TMUX" = "" ]; then
+	tmux attach -t main || tmux new -s main;
+fi
+
+# If running tmux, alias clear to scrolling to top and clearing tmux history
+if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
+	▸   alias clear='clear && tmux clear-history'
+fi
