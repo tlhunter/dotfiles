@@ -77,5 +77,8 @@ fi
 
 # If running tmux, alias clear to scrolling to top and clearing tmux history
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
-	▸   alias clear='clear && tmux clear-history'
+	alias clear='clear && tmux clear-history'
 fi
+
+export NVM_DIR="/Users/thunter/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
