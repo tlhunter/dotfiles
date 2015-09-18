@@ -14,7 +14,7 @@
 	default = current
 
 [core]
-	excludesfile = /home/tlhunter/.gitignore
+	excludesfile = ~/.gitignore
 
 [tig]
 	line-graphics = "utf-8"
