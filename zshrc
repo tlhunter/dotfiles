@@ -73,10 +73,7 @@ alias o='xdg-open'
 # If not running tmux, run tmux and attach to a session named "main"
 if [ "$TMUX" = "" ]; then
 	tmux attach -t main || tmux new -s main;
-fi
-
-# If running tmux, alias clear to scrolling to top and clearing tmux history
-if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
+else
 	alias clear='clear && tmux clear-history'
 fi
 
