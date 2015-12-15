@@ -51,6 +51,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
+pid_using_port () {
+	lsof -i tcp:"$1" | sed "1 d" | awk '{print $2}' | tail -n 1
+}
+
 alias ga='git add'
 alias gp='git push'
 alias gl='git log'
