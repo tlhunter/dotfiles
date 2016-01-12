@@ -1,9 +1,9 @@
 # VIM
-.*.swo
-.swo
-.*.swp
+.*.sw?
+.sw?
 .idea
-.swp
+.orig
+.rej
 
 #OS X Leftover Crap
 ._*
