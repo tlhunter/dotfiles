@@ -70,6 +70,8 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias ag='/usr/bin/ag'
 
+alias scrape='wget -e robots=off -r -nH --cut-dirs=2 --no-parent --reject="index.html*"'
+
 alias epoch='date +%s'
 
 alias o='xdg-open'
