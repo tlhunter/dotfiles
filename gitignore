@@ -18,3 +18,5 @@ JasmineAdapter-*.js
 
 # Redis DB when running redis-server manually
 dump.rdb
+
+*.patch
