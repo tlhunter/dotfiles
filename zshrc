@@ -69,7 +69,7 @@ alias gra='git remote add'
 alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
-alias ag='/usr/bin/ag'
+alias ag='/usr/bin/ag --path-to-agignore .agignore'
 
 alias scrape='wget -e robots=off -r -nH --cut-dirs=2 --no-parent --reject="index.html*"'
 
