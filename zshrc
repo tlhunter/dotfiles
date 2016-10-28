@@ -71,6 +71,11 @@ alias gpu='git pull'
 alias gcl='git clone'
 alias ag='/usr/bin/ag --path-to-agignore .agignore'
 
+# Usage: gwho Thomas, gets list of all commits over past year
+function gwho() {
+	git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --since 1.year | grep "$1" | grep -v Merge | less
+}
+
 alias scrape='wget -e robots=off -r -nH --cut-dirs=2 --no-parent --reject="index.html*"'
 
 alias epoch='date +%s'
