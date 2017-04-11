@@ -55,6 +55,10 @@ pid_using_port () {
 	lsof -i tcp:"$1" | sed "1 d" | awk '{print $2}' | tail -n 1
 }
 
+ports_by_pid () {
+	lsof -Pan -p "$1" -i 2> /dev/null | grep LISTEN | awk '{ print $9 }'
+}
+
 alias ga='git add'
 alias gp='git push'
 alias gl='git log'
