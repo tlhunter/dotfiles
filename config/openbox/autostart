@@ -1,0 +1,17 @@
+# Bar at bottom of screen
+tint2 &
+
+# Volume OSD controls
+xfce4-volumed &
+
+# Set wallpaper
+eval `cat $HOME/.fehbg` &
+
+# Disables the T460s Trackpad (TrackPoint keeps working)
+# xinput --disable "SynPS/2 Synaptics TouchPad" &
+
+# Disables Trackpad Tap
+synclient MaxTapTime=0 &
+
+# Keyboard Config
+source $HOME/.xsessionrc &
