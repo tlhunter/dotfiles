@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "monospace",
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Hybrid Next (Gray Background)",
+    "keyboard.dispatch": "keyCode",
+    "vim.disableAnnoyingNeovimMessage": true
+}
