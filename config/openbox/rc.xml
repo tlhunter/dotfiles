@@ -151,58 +151,133 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <!-- Screen Brightness -->
     <keybind key="W-A-1"><action name="Execute"><execute>xbacklight -set 1</execute></action></keybind>
     <keybind key="W-A-2"><action name="Execute"><execute>xbacklight -set 10</execute></action></keybind>
     <keybind key="W-A-3"><action name="Execute"><execute>xbacklight -set 25</execute></action></keybind>
     <keybind key="W-A-4"><action name="Execute"><execute>xbacklight -set 50</execute></action></keybind>
     <keybind key="W-A-5"><action name="Execute"><execute>xbacklight -set 100</execute></action></keybind>
-
-    <!-- Desktops -->
-    <keybind key="W-1"><action name="GoToDesktop"><to>1</to></action></keybind>
-    <keybind key="W-2"><action name="GoToDesktop"><to>2</to></action></keybind>
-    <keybind key="W-3"><action name="GoToDesktop"><to>3</to></action></keybind>
-    <keybind key="W-4"><action name="GoToDesktop"><to>4</to></action></keybind>
-    <keybind key="W-d"><action name="ToggleShowDesktop"/></keybind>
-
-    <!-- Screens, executes Arandr scripts -->
-    <keybind key="W-S-1"><action name="Execute"><execute>~/.screenlayout/single-docking.sh</execute></action></keybind> <!-- Windows + Shift + 1 Single Monitor with Docking Station -->
-    <keybind key="W-S-2"><action name="Execute"><execute>~/.screenlayout/dual-docking.sh</execute></action></keybind> <!-- Windows + Shift + 2 Dual Monitor with Docking Station -->
-    <keybind key="W-S-3"><action name="Execute"><execute>~/.screenlayout/single-monitor.sh</execute></action></keybind> <!-- Windows + Shift + 3 Single Monitor no Docking Station -->
-    <keybind key="W-S-4"><action name="Execute"><execute>~/.screenlayout/dual-monitor.sh</execute></action></keybind> <!-- Windows + Shift + 4 Dual Monitor built in HDMI -->
-
+    <keybind key="W-1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-d">
+      <action name="ToggleShowDesktop"/>
+    </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4"><action name="Close"/></keybind>
-    <keybind key="W-q"><action name="Close"/></keybind>
-    <keybind key="W-j"><action name="ToggleMaximize"/></keybind>
-
-    <!-- Command Runners -->
-    <keybind key="W-l"><action name="Execute"><execute>slock</execute></action></keybind>
-    <keybind key="W-e"><action name="Execute"><execute>thunar</execute></action></keybind> <!-- File Browser -->
-    <keybind key="W-a"><action name="Execute"><execute>audacious</execute></action></keybind> <!-- Audio Player -->
-    <keybind key="W-v"><action name="Execute"><execute>gvim</execute></action></keybind> <!-- Text Editor -->
-    <keybind key="W-t"><action name="Execute"><execute>terminator</execute></action></keybind> <!-- Terminal -->
-    <keybind key="W-w"><action name="Execute"><execute>google-chrome</execute></action></keybind> <!-- Web Browser -->
-    <keybind key="W-x"><action name="Execute"><execute>xkill</execute></action></keybind> <!-- Executioner -->
-    <keybind key="W-k"><action name="Execute"><execute>killall HipChat.bin</execute></action></keybind> <!-- Toggle hipchat -->
-    <keybind key="W-m"><action name="Execute"><execute>trackpad-toggle</execute></action></keybind> <!-- Toggle this shitty trackpad -->
-    <keybind key="W-n"><action name="Execute"><execute>~/.xsessionrc</execute></action></keybind> <!-- Manually load stupid xsessionrc file -->
-    <keybind key="W-b"><action name="Execute"><execute>xkbset nullify lock</execute></action></keybind>
-    <keybind key="A-space"><action name="Execute"><execute>dmenu_run -p "fenrir://" -nb "#122232" -nf "#a2bad2" -sb "#5d4062" -sf "#a2bad2"</execute></action></keybind>
-    <keybind key="W-p"><action name="Execute"><execute>arandr</execute></action></keybind>
-
-    <!-- Media -->
-    <keybind key="XF86AudioPrev"><action name="Execute"><execute>audacious --rew</execute></action></keybind>
-    <keybind key="XF86AudioNext"><action name="Execute"><execute>audacious --fwd</execute></action></keybind>
-    <keybind key="XF86AudioPlay"><action name="Execute"><execute>audacious --play-pause</execute></action></keybind>
-    <keybind key="XF86Search"><action name="Execute"><execute>wmctrl -a audacious ; audacious --show-jump-box</execute></action></keybind>
-
-    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
-    <keybind key="A-Print"><action name="Execute"><command>scrot -s -e 'mv $f ~/Screenshots/'</command></action></keybind>
-    <!-- Launch scrot when Print is pressed -->
-    <keybind key="Print"><action name="Execute"><command>scrot -e 'mv $f ~/Screenshots/'</command></action></keybind>
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <execute>dm-tool lock</execute>
+      </action>
+    </keybind>
+    <!-- File Browser -->
+    <keybind key="W-e">
+      <action name="Execute">
+        <execute>thunar</execute>
+      </action>
+    </keybind>
+    <!-- Audio Player -->
+    <keybind key="W-a">
+      <action name="Execute">
+        <execute>audacious</execute>
+      </action>
+    </keybind>
+    <!-- Text Editor -->
+    <keybind key="W-v">
+      <action name="Execute">
+        <execute>gvim</execute>
+      </action>
+    </keybind>
+    <!-- Terminal -->
+    <keybind key="W-t">
+      <action name="Execute">
+        <execute>terminator</execute>
+      </action>
+    </keybind>
+    <!-- Web Browser -->
+    <keybind key="W-w">
+      <action name="Execute">
+        <execute>firefox</execute>
+      </action>
+    </keybind>
+    <!-- Executioner -->
+    <keybind key="W-x">
+      <action name="Execute">
+        <execute>xkill</execute>
+      </action>
+    </keybind>
+    <!-- Manually load stupid xsessionrc file -->
+    <keybind key="W-n">
+      <action name="Execute">
+        <execute>~/.xsessionrc</execute>
+      </action>
+    </keybind>
+    <keybind key="A-space">
+      <action name="Execute">
+        <execute>dmenu_run  -p "have an ice day" -nb "#122232" -nf "#a2bad2" -sb "#5d4062" -sf "#a2bad2"</execute>
+      </action>
+      <!--
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+      -->
+    </keybind>
+    <keybind key="W-j">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <execute>arandr</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+      <action name="Execute">
+        <execute>audacious --rew</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+      <action name="Execute">
+        <execute>audacious --fwd</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+      <action name="Execute">
+        <execute>audacious --play-pause</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86Search">
+      <action name="Execute">
+        <execute>wmctrl -a audacious ; audacious --show-jump-box</execute>
+        <execute/>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching -->
-
     <keybind key="A-Tab">
       <action name="NextWindow">
         <finalactions>
@@ -219,6 +294,36 @@
           <action name="Raise"/>
           <action name="Unshade"/>
         </finalactions>
+      </action>
+    </keybind>
+    <!-- Take a screenshot of the current window with scrot when Ctrl+Print is pressed -->
+    <keybind key="C-Print">
+      <action name="Execute">
+        <command>scrot -bu '%Y%m%d%H%I%S.png' -e 'mv $f ~/screenshots/'</command>
+      </action>
+    </keybind>
+    <!-- Take a screenshot of a rectangle when Alt+Print is pressed -->
+    <keybind key="A-Print">
+      <action name="Execute">
+        <command>scrot -s '%Y%m%d%H%I%S.png' -e 'mv $f ~/screenshots/'</command>
+      </action>
+    </keybind>
+    <!-- Launch scrot when Print is pressed -->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot '%Y%m%d%H%I%S.png' -e 'mv $f ~/screenshots/'</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-1">
+      <!-- Windows + Shift + 1 for Single monitor mode -->
+      <action name="Execute">
+        <execute>~/.screenlayout/single-monitor.sh</execute>
+      </action>
+    </keybind>
+    <keybind key="W-S-2">
+      <!-- Windows + Shift + 2 for Dual monitor mode -->
+      <action name="Execute">
+        <execute>~/.screenlayout/dual-monitor.sh</execute>
       </action>
     </keybind>
   </keyboard>
