@@ -11,7 +11,7 @@ ZSH_THEME="lambda"
 CASE_SENSITIVE="false"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -49,7 +49,9 @@ plugins=(git golang node npm postgres redis-cli tmux vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
 
 pid_using_port () {
 	lsof -i tcp:"$1" | sed "1 d" | awk '{print $2}' | tail -n 1

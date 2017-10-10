@@ -7,43 +7,71 @@
     <action name="Execute"><execute>terminator</execute></action>
   </item>
 
-  <item label="chrome">
-    <action name="Execute"><execute>google-chrome</execute></action>
+  <item label="galculator">
+    <action name="Execute"><execute>galculator</execute></action>
   </item>
 
   <item label="postman">
-    <action name="Execute"><execute>/opt/google/chrome-beta/google-chrome-beta --user-data-dir=/home/tlhunter/.config/google-chrome-beta --profile-directory=Default --app-id=fhbjgbiflinjbdggehcddcbncdddomop</execute></action>
+    <action name="Execute"><execute>postman</execute></action>
   </item>
 
-  <item label="kazam">
-    <action name="Execute"><execute>kazam</execute></action>
+  <item label="firefox">
+    <action name="Execute"><execute>firefox</execute></action>
   </item>
 
-  <item label="hipchat">
-    <action name="Execute"><execute>hipchat4</execute></action>
+  <item label="chrome">
+    <action name="Execute"><execute>google-chrome-beta</execute></action>
   </item>
 
-  <item label="vim">
-    <action name="Execute"><execute>gvim</execute></action>
+  <item label="veracrypt">
+    <action name="Execute"><execute>veracrypt</execute></action>
   </item>
 
-  <item label="eclipse">
-    <action name="Execute"><execute>/home/tlhunter/java-neon/eclipse/eclipse</execute></action>
-  </item>
+  <menu id="editors" label="editors">
+    <item label="vim">
+      <action name="Execute"><execute>gvim</execute></action>
+    </item>
 
-  <item label="atom">
-    <action name="Execute"><execute>atom</execute></action>
-  </item>
+    <item label="code">
+      <action name="Execute"><execute>code</execute></action>
+    </item>
 
-  <item label="gnome-calculator">
-    <action name="Execute"><execute>gnome-calculator</execute></action>
-  </item>
+    <item label="atom">
+      <action name="Execute"><execute>atom</execute></action>
+    </item>
+  </menu>
 
-  <item label="virtualbox">
-    <action name="Execute"><execute>virtualbox</execute></action>
-  </item>
+  <menu id="network" label="network">
+    <item label="filezilla">
+      <action name="Execute"><execute>filezilla</execute></action>
+    </item>
 
-  <menu id="media" label="Media">
+    <item label="etherape">
+      <action name="Execute"><execute>gksudo etherape</execute></action>
+    </item>
+
+    <item label="wireshark">
+      <action name="Execute"><execute>gksudo wireshark</execute></action>
+    </item>
+
+    <item label="transmission">
+      <action name="Execute"><execute>transmission-gtk</execute></action>
+    </item>
+  </menu>
+
+  <menu id="media" label="media">
+    <item label="kazam">
+      <action name="Execute"><execute>kazam</execute></action>
+    </item>
+
+    <item label="sunvox">
+      <action name="Execute"><execute>sunvox</execute></action>
+    </item>
+
+    <item label="clementine">
+      <action name="Execute"><execute>clementine</execute></action>
+    </item>
+
     <item label="audacious">
       <action name="Execute"><execute>audacious</execute></action>
     </item>
@@ -51,23 +79,69 @@
     <item label="spotify">
       <action name="Execute"><execute>spotify</execute></action>
     </item>
+
+    <item label="vlc">
+      <action name="Execute"><execute>vlc</execute></action>
+    </item>
   </menu>
 
-  <menu id="network" label="Network Utils">
-    <item label="vpn">
-      <action name="Execute"><execute>/opt/cisco/anyconnect/bin/vpnui</execute></action>
+  <menu id="graphics" label="graphics">
+    <item label="dia">
+      <action name="Execute"><execute>dia</execute></action>
     </item>
 
-    <item label="etherape">
-      <action name="Execute"><execute>etherape</execute></action>
+    <item label="inkscape">
+      <action name="Execute"><execute>inkscape</execute></action>
     </item>
 
-    <item label="wireshark">
-      <action name="Execute"><execute>wireshark</execute></action>
+    <item label="gimp">
+      <action name="Execute"><execute>gimp</execute></action>
+    </item>
+  </menu>
+
+  <menu id="games" label="games">
+    <item label="Steam">
+      <action name="Execute"><execute>steam</execute></action>
     </item>
 
-    <item label="host-switcher">
-      <action name="Execute"><execute>gksudo /usr/local/host-switcher/host-switcher</execute></action>
+    <item label="Minecraft">
+      <action name="Execute"><execute>minecraft</execute></action>
+    </item>
+
+    <item label="Doom I">
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/doom.wad</execute></action>
+    </item>
+
+    <item label="Doom II Ultimate">
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/doom2.wad</execute></action>
+    </item>
+
+    <item label="Doom Plutonia">
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/Plutonia.wad</execute></action>
+    </item>
+
+    <item label="Doom TNT: Evilution">
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/Tnt.wad</execute></action>
+    </item>
+
+    <item label="Heretic">
+      <action name="Execute"><execute>doomsday -game jheretic -file /usr/share/doom/heretic.wad</execute></action>
+    </item>
+
+    <item label="Hexen">
+      <action name="Execute"><execute>doomsday -game jhexen -file /usr/share/doom/hexen.wad</execute></action>
+    </item>
+
+    <item label="Quake I">
+      <action name="Execute"><execute>darkplaces</execute></action>
+    </item>
+
+    <item label="Quake II">
+      <action name="Execute"><execute>quake2</execute></action>
+    </item>
+
+    <item label="Quake III">
+      <action name="Execute"><execute>quake3</execute></action>
     </item>
   </menu>
 
@@ -90,11 +164,11 @@
       <action name="Execute"><execute>xfce4-display-settings</execute></action>
     </item>
 
+    <separator />
+
     <item label="teensy">
       <action name="Execute"><execute>~/.bin/teensy</execute></action>
     </item>
-
-    <separator />
 
     <item label="Reconfigure">
       <action name="Reconfigure" />
@@ -108,7 +182,7 @@
   <separator />
 
   <item label="Lock">
-    <action name="Execute"><execute>slock</execute></action>
+    <action name="Execute"><execute>dm-tool lock</execute></action>
   </item>
 
   <item label="Suspend">

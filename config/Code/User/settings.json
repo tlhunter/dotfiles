@@ -4,5 +4,6 @@
     "editor.tabSize": 2,
     "workbench.colorTheme": "Hybrid Next (Gray Background)",
     "keyboard.dispatch": "keyCode",
-    "vim.disableAnnoyingNeovimMessage": true
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.startupEditor": "newUntitledFile"
 }

@@ -1,8 +1,7 @@
 [global_config]
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   inactive_color_offset = 1.0
-  title_transmit_bg_color = "#383838"
 [keybindings]
+  paste = <Shift>Insert
 [layouts]
   [[default]]
     [[[child1]]]
@@ -14,31 +13,33 @@
 [plugins]
 [profiles]
   [[default]]
-    background_darkness = 0.87
+    background_color = "#161719"
     background_image = None
     copy_on_selection = True
-    cursor_color = "#cacaca"
+    cursor_color = "#b7bcba"
     font = Monospace 9
-    foreground_color = "#ffffff"
-    icon_bell = False
-    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    scrollback_lines = 0
+    foreground_color = "#b7bcba"
+    palette = "#2a2e33:#b84d51:#c4d06c:#e4b55e:#6e90b0:#a17eac:#7fbfb4:#b5b9b6:#6d6d6d:#8d2e32:#798431:#e58a50:#4b6b88:#6e5079:#4d7b74:#5a626a"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
     visible_bell = True
-  [[OldDefault]]
-    background_color = "#002b36"
-    background_darkness = 0.8
+  [[lighter]]
+    background_color = "#ffffff"
     background_image = None
     copy_on_selection = True
-    font = Monospace 10
-    foreground_color = "#839496"
-    icon_bell = False
-    scrollback_lines = 2000
+    cursor_color = "#b7bcba"
+    font = Monospace 9
+    foreground_color = "#515855"
+    palette = "#ffffff:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#505050:#afafaf:#ff5555:#0b940b:#aaaa2e:#5555ff:#ff55ff:#2da1a1:#000000"
+    scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
     visible_bell = True
-  [[lite]]
+  [[old_default]]
     background_image = None
-    foreground_color = "#ffffff"
+    copy_on_selection = True
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scrollbar_position = hidden
+    show_titlebar = False
+    visible_bell = True

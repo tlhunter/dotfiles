@@ -16,7 +16,10 @@ npm-debug.log
 jasmine-*.js
 JasmineAdapter-*.js
 
+**/*.db-journal
+
 # Redis DB when running redis-server manually
 dump.rdb
 
 *.patch
+*.autosave
