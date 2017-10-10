@@ -23,10 +23,6 @@
     <action name="Execute"><execute>google-chrome-beta</execute></action>
   </item>
 
-  <item label="veracrypt">
-    <action name="Execute"><execute>veracrypt</execute></action>
-  </item>
-
   <menu id="editors" label="editors">
     <item label="vim">
       <action name="Execute"><execute>gvim</execute></action>
@@ -39,35 +35,13 @@
     <item label="atom">
       <action name="Execute"><execute>atom</execute></action>
     </item>
-  </menu>
 
-  <menu id="network" label="network">
-    <item label="filezilla">
-      <action name="Execute"><execute>filezilla</execute></action>
-    </item>
-
-    <item label="etherape">
-      <action name="Execute"><execute>gksudo etherape</execute></action>
-    </item>
-
-    <item label="wireshark">
-      <action name="Execute"><execute>gksudo wireshark</execute></action>
-    </item>
-
-    <item label="transmission">
-      <action name="Execute"><execute>transmission-gtk</execute></action>
+    <item label="gedit">
+      <action name="Execute"><execute>gedit</execute></action>
     </item>
   </menu>
 
   <menu id="media" label="media">
-    <item label="kazam">
-      <action name="Execute"><execute>kazam</execute></action>
-    </item>
-
-    <item label="sunvox">
-      <action name="Execute"><execute>sunvox</execute></action>
-    </item>
-
     <item label="clementine">
       <action name="Execute"><execute>clementine</execute></action>
     </item>
@@ -85,7 +59,15 @@
     </item>
   </menu>
 
-  <menu id="graphics" label="graphics">
+  <menu id="production" label="production">
+    <item label="kazam">
+      <action name="Execute"><execute>kazam</execute></action>
+    </item>
+
+    <item label="sunvox">
+      <action name="Execute"><execute>sunvox</execute></action>
+    </item>
+
     <item label="dia">
       <action name="Execute"><execute>dia</execute></action>
     </item>
@@ -145,6 +127,24 @@
     </item>
   </menu>
 
+  <menu id="network" label="network">
+    <item label="filezilla">
+      <action name="Execute"><execute>filezilla</execute></action>
+    </item>
+
+    <item label="etherape">
+      <action name="Execute"><execute>gksudo etherape</execute></action>
+    </item>
+
+    <item label="wireshark">
+      <action name="Execute"><execute>gksudo wireshark</execute></action>
+    </item>
+
+    <item label="transmission">
+      <action name="Execute"><execute>transmission-gtk</execute></action>
+    </item>
+  </menu>
+
   <separator />
 
   <menu id="/Debian" />
@@ -170,11 +170,11 @@
       <action name="Execute"><execute>~/.bin/teensy</execute></action>
     </item>
 
-    <item label="Reconfigure">
+    <item label="reconfigure">
       <action name="Reconfigure" />
     </item>
 
-    <item label="Restart">
+    <item label="restart">
       <action name="Restart" />
     </item>
   </menu>
