@@ -36,6 +36,10 @@
       <action name="Execute"><execute>atom</execute></action>
     </item>
 
+    <item label="leafpad">
+      <action name="Execute"><execute>leafpad</execute></action>
+    </item>
+
     <item label="gedit">
       <action name="Execute"><execute>gedit</execute></action>
     </item>
