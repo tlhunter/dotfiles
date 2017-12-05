@@ -2,8 +2,11 @@
     "editor.fontFamily": "monospace",
     "editor.fontSize": 13,
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Hybrid Next (Gray Background)",
     "keyboard.dispatch": "keyCode",
     "vim.disableAnnoyingNeovimMessage": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "window.menuBarVisibility": "toggle",
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
+    "workbench.colorTheme": "Hybrid Next",
+    "editor.autoClosingBrackets": false
 }
