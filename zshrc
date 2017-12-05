@@ -94,6 +94,3 @@ if [ "$TMUX" = "" ]; then
 else
 	alias clear='clear && tmux clear-history'
 fi
-
-export NVM_DIR="/Users/thunter/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
