@@ -7,6 +7,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.menuBarVisibility": "toggle",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
-    "workbench.colorTheme": "Hybrid Next",
+    "workbench.colorTheme": "Hybrid Next (Gray Background)",
     "editor.autoClosingBrackets": false
 }
