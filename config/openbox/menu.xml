@@ -7,8 +7,8 @@
     <action name="Execute"><execute>terminator</execute></action>
   </item>
 
-  <item label="galculator">
-    <action name="Execute"><execute>galculator</execute></action>
+  <item label="bc">
+    <action name="Execute"><execute>stterm -e bc</execute></action>
   </item>
 
   <item label="postman">

@@ -256,6 +256,11 @@
         <execute>arandr</execute>
       </action>
     </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <execute>stterm -e bc</execute>
+      </action>
+    </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
         <execute>audacious --rew</execute>
