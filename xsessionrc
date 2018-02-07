@@ -16,3 +16,7 @@ gsettings set org.gnome.desktop.interface cursor-size 16
 
 # Disable trackpad tap to click (aka typing palm click bullshit)
 synclient MaxTapTime=0
+
+# Scrolling
+synclient VertEdgeScroll=0
+synclient VertScrollDelta=-114
