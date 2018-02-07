@@ -9,3 +9,10 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 # Keyboard Repeat
 xset r rate 275 20
+
+# Force consistent mouse cursors everywhere
+gsettings set org.gnome.desktop.interface cursor-theme DMZ-Black
+gsettings set org.gnome.desktop.interface cursor-size 16
+
+# Disable trackpad tap to click (aka typing palm click bullshit)
+synclient MaxTapTime=0
