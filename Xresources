@@ -7,6 +7,11 @@ URxvt.boldFont: xft:DejaVu Sans Mono:size=9:antialias=true
 XTerm*colorBDMode: true
 XTerm*allowBoldFonts: false
 
+xterm*VT100.Translations: #override \
+	Shift <Key>Insert:    insert-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
 
 #define t_background        #1d1f21
 #define t_foreground        #c5c8c6
