@@ -217,7 +217,7 @@
     <!-- Terminal -->
     <keybind key="W-t">
       <action name="Execute">
-        <execute>terminator</execute>
+        <execute>uxterm</execute>
       </action>
     </keybind>
     <!-- Web Browser -->
@@ -232,10 +232,9 @@
         <execute>xkill</execute>
       </action>
     </keybind>
-    <!-- Manually load stupid xsessionrc file -->
     <keybind key="W-n">
       <action name="Execute">
-        <execute>~/.xsessionrc</execute>
+        <execute>stterm -e nmtui</execute>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -259,6 +258,11 @@
     <keybind key="W-c">
       <action name="Execute">
         <execute>stterm -e bc</execute>
+      </action>
+    </keybind>
+    <keybind key="W-S-p">
+      <action name="Execute">
+        <execute>pavucontrol</execute>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">

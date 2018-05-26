@@ -3,8 +3,8 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox 3">
-  <item label="terminator">
-    <action name="Execute"><execute>terminator</execute></action>
+  <item label="uxterm">
+    <action name="Execute"><execute>uxterm</execute></action>
   </item>
 
   <item label="bc">
@@ -32,24 +32,12 @@
       <action name="Execute"><execute>code</execute></action>
     </item>
 
-    <item label="atom">
-      <action name="Execute"><execute>atom</execute></action>
-    </item>
-
     <item label="leafpad">
       <action name="Execute"><execute>leafpad</execute></action>
-    </item>
-
-    <item label="gedit">
-      <action name="Execute"><execute>gedit</execute></action>
     </item>
   </menu>
 
   <menu id="media" label="media">
-    <item label="clementine">
-      <action name="Execute"><execute>clementine</execute></action>
-    </item>
-
     <item label="audacious">
       <action name="Execute"><execute>audacious</execute></action>
     </item>
@@ -66,10 +54,6 @@
   <menu id="production" label="production">
     <item label="kazam">
       <action name="Execute"><execute>kazam</execute></action>
-    </item>
-
-    <item label="sunvox">
-      <action name="Execute"><execute>sunvox</execute></action>
     </item>
 
     <item label="dia">
