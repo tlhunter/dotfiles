@@ -2,6 +2,6 @@ tint2 &
 xfce4-volumed &
 /home/tlhunter/.fehbg &
 # polybar nucleocide &
-xcompmgr -cC -t-4 -l-8 -r5 &
+# xcompmgr -cC -t-4 -l-8 -r5 &
 # eval `/home/tlhunter/.xsessionrc` &
 # terminator --command="/home/tlhunter/.xsessionrc" &
