@@ -308,19 +308,19 @@
     <!-- Take a screenshot of the current window with scrot when Ctrl+Print is pressed -->
     <keybind key="C-Print">
       <action name="Execute">
-        <command>scrot -bu '%Y%m%d%H%I%S.png' -e 'mv $f ~/screenshots/'</command>
+        <command>scrot -bu '%Y%m%d%H%M%S.png' -e 'mv $f ~/screenshots/'</command>
       </action>
     </keybind>
     <!-- Take a screenshot of a rectangle when Alt+Print is pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -s '%Y%m%d%H%I%S.png' -e 'mv $f ~/screenshots/'</command>
+        <command>scrot -s '%Y%m%d%H%M%S.png' -e 'mv $f ~/screenshots/'</command>
       </action>
     </keybind>
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot '%Y%m%d%H%I%S.png' -e 'mv $f ~/screenshots/'</command>
+        <command>scrot '%Y%m%d%H%M%S.png' -e 'mv $f ~/screenshots/'</command>
       </action>
     </keybind>
     <keybind key="W-S-1">
