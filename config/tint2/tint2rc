@@ -3,30 +3,50 @@
 # For information on manually configuring tint2 see http://code.google.com/p/tint2/wiki/Configure
 
 # Background definitions
-# ID 1
+# ID 1: Panel Background
 rounded = 0
 border_width = 0
-background_color = #000000 100
+background_color = #1D1F21 100
 border_color = #FFFFFF 0
 
-# ID 2
+# ID 2: Normal Task Background
 rounded = 0
 border_width = 0
-background_color = #FFFFFF 40
-border_color = #FFFFFF 48
+background_color = #282A2E 99
+border_color = #FFFFFF 0
+task_background_id = 2
+task_font_color = #C5C8C6 100
 
-# ID 3
+# ID 3: Active Task Background
 rounded = 0
 border_width = 0
-background_color = #FFFFFF 16
-border_color = #FFFFFF 68
+background_color = #b5bd68 99
+border_color = #FFFFFF 0
+task_active_background_id = 3
+task_active_font_color = #1D1F21 100
+
+# ID 4: Iconified Task Background
+rounded = 0
+border_width = 0
+background_color = #282A2E 99
+border_color = #FFFFFF 0
+task_iconified_background_id = 4
+task_iconified_font_color = #707880 100
+
+# ID 5: Urgent Task Background
+rounded = 0
+border_width = 0
+background_color = #FFFFFF 99
+border_color = #FFFFFF 0
+task_urgent_background_id = 5
+task_urgent_font_color = #CC6666 100
 
 # Panel
 panel_monitor = all
 panel_position = bottom center horizontal
 panel_size = 100% 30
 panel_margin = 0 0
-panel_padding = 7 0 7
+panel_padding = 0 0 7
 panel_dock = 0
 wm_menu = 1
 panel_layer = top
@@ -53,10 +73,10 @@ task_text = 1
 task_centered = 1
 task_maximum_size = 160 35
 task_padding = 6 2
-task_background_id = 3
-task_active_background_id = 2
-task_urgent_background_id = 2
-task_iconified_background_id = 3
+# task_background_id = 2
+# task_active_background_id = 3
+# task_urgent_background_id = 5
+# task_iconified_background_id = 4
 task_tooltip = 0
 
 # Task Icons
@@ -67,10 +87,10 @@ task_iconified_icon_asb = 70 0 0
 
 # Fonts
 task_font = sans 9
-task_font_color = #FFFFFF 68
-task_active_font_color = #FFFFFF 83
-task_urgent_font_color = #FFFFFF 83
-task_iconified_font_color = #FFFFFF 68
+# task_font_color = #C5C8C6 100
+# task_active_font_color = #C5C8C6 100
+# task_urgent_font_color = #CC6666 100
+# task_iconified_font_color = #373B41 100
 font_shadow = 0
 
 # System Tray
@@ -86,7 +106,7 @@ time1_format = %H:%M
 time1_font = sans 8
 time2_format = %A %d %B
 time2_font = sans 6
-clock_font_color = #FFFFFF 74
+clock_font_color = #f0c674 100
 clock_padding = 1 0
 clock_background_id = 0
 clock_rclick_command = orage
@@ -97,7 +117,7 @@ tooltip_show_timeout = 0.7
 tooltip_hide_timeout = 0.3
 tooltip_background_id = 1
 tooltip_font = sans 10
-tooltip_font_color = #000000 80
+tooltip_font_color = #c5c8c6 100
 
 # Mouse
 mouse_middle = none
@@ -110,7 +130,7 @@ battery_low_cmd = notify-send "battery low"
 battery_hide = 100
 bat1_font = sans 8
 bat2_font = sans 6
-battery_font_color = #FFFFFF 74
+battery_font_color = #de935f 100
 battery_padding = 1 0
 battery_background_id = 0
 

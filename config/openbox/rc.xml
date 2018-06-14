@@ -239,7 +239,7 @@
     </keybind>
     <keybind key="A-space">
       <action name="Execute">
-        <execute>dmenu_run  -p "have an ice day" -nb "#122232" -nf "#a2bad2" -sb "#5d4062" -sf "#a2bad2"</execute>
+        <execute>dmenu_run  -p "$" -nb "#1d1f21" -nf "#c5c8c6" -sb "#373b41" -sf "#c5c8c6"</execute>
       </action>
       <!--
       <action name="ShowMenu">
