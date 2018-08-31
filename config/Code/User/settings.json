@@ -9,5 +9,6 @@
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
     "workbench.colorTheme": "Hybrid Next (Gray Background)",
     "editor.autoClosingBrackets": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "telemetry.enableTelemetry": false
 }
