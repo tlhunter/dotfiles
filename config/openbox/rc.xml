@@ -234,7 +234,7 @@
     </keybind>
     <keybind key="W-n">
       <action name="Execute">
-        <execute>stterm -e nmtui connect</execute>
+        <execute>stterm -T "Network Manager" -e nmtui connect</execute>
       </action>
     </keybind>
     <keybind key="A-space">
