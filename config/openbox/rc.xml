@@ -628,5 +628,10 @@
     <manageDesktops>yes</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
-  <applications/>
+  <applications>
+    <application type="normal">
+      <maximized>true</maximized>
+      <decor>no</decor>
+    </application>
+  </applications>
 </openbox_config>
