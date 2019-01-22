@@ -338,6 +338,46 @@
         <execute>~/.screenlayout/dual-monitor.sh</execute>
       </action>
     </keybind>
+    <keybind key="W-Left">
+      <!-- Super + Left = window takes up left half of screen -->
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <!-- Super + Right = window takes up right half of screen -->
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <!-- Super + Up = window takes up left half of screen -->
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <!-- Super + Down = window takes up left half of screen -->
+      <action name="Unmaximize" />
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>-0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <!-- number of pixels the mouse must move before a drag begins -->
