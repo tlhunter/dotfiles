@@ -19,4 +19,4 @@ synclient MaxTapTime=0
 
 # Scrolling
 synclient VertEdgeScroll=0
-synclient VertScrollDelta=-60
+synclient VertScrollDelta=-45
