@@ -3,12 +3,12 @@
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/share/openbox/menu.xsd">
 
 <menu id="root-menu" label="Openbox 3">
-  <item label="uxterm">
+  <item label="terminal">
     <action name="Execute"><execute>uxterm</execute></action>
   </item>
 
-  <item label="bc">
-    <action name="Execute"><execute>stterm -e bc</execute></action>
+  <item label="calculator">
+    <action name="Execute"><execute>gnome-calculator</execute></action>
   </item>
 
   <item label="postman">
@@ -22,6 +22,22 @@
   <item label="chrome">
     <action name="Execute"><execute>google-chrome-beta</execute></action>
   </item>
+
+  <item label="markdown">
+    <action name="Execute"><execute>remarkable</execute></action>
+  </item>
+
+  <separator />
+
+  <menu id="screen_record" label="screen record">
+    <item label="kazam (video + audio)">
+      <action name="Execute"><execute>kazam</execute></action>
+    </item>
+
+    <item label="peek (gif)">
+      <action name="Execute"><execute>peek</execute></action>
+    </item>
+  </menu>
 
   <menu id="editors" label="editors">
     <item label="vim">
@@ -49,13 +65,13 @@
     <item label="vlc">
       <action name="Execute"><execute>vlc</execute></action>
     </item>
+
+    <item label="sdr radio">
+      <action name="Execute"><execute>gqrx</execute></action>
+    </item>
   </menu>
 
   <menu id="production" label="production">
-    <item label="kazam">
-      <action name="Execute"><execute>kazam</execute></action>
-    </item>
-
     <item label="dia">
       <action name="Execute"><execute>dia</execute></action>
     </item>
@@ -133,13 +149,13 @@
     </item>
   </menu>
 
-  <separator />
+  <menu id="config" label="config">
+    <menu id="/Debian" />
 
-  <menu id="/Debian" />
+    <menu id="client-list-menu" />
 
-  <menu id="client-list-menu" />
+    <separator />
 
-  <menu id="config" label="Config">
     <item label="lxappearance">
       <action name="Execute"><execute>lxappearance</execute></action>
     </item>
@@ -169,27 +185,27 @@
 
   <separator />
 
-  <item label="Lock">
+  <item label="lock">
     <action name="Execute"><execute>dm-tool lock</execute></action>
   </item>
 
-  <item label="Logout">
+  <item label="logout">
     <action name="Exit" />
   </item>
 
-  <item label="Suspend">
+  <item label="suspend">
     <action name="Execute"><execute>gksudo --disable-grab -- pm-suspend</execute></action>
   </item>
 
-  <item label="Hibernate">
+  <item label="hibernate">
     <action name="Execute"><execute>gksudo --disable-grab -- pm-hibernate</execute></action>
   </item>
 
-  <item label="Reboot">
+  <item label="reboot">
     <action name="Execute"><execute>gksudo --disable-grab -- reboot</execute></action>
   </item>
 
-  <item label="Shutdown">
+  <item label="shutdown">
     <action name="Execute"><execute>gksudo --disable-grab -- shutdown -P now</execute></action>
   </item>
 </menu>
