@@ -5,7 +5,6 @@
     "keyboard.dispatch": "keyCode",
     "vim.disableAnnoyingNeovimMessage": true,
     "workbench.startupEditor": "newUntitledFile",
-    "window.menuBarVisibility": "toggle",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
     "workbench.colorTheme": "Hybrid Next (Gray Background)",
     "editor.autoClosingBrackets": false,
