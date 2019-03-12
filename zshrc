@@ -82,6 +82,11 @@ function gwho() {
 	git log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --since 1.year | grep "$1" | grep -v Merge | less
 }
 
+# $ download-web http://www.example.com/path/to/files
+function download-web() {
+	wget --user-agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0" -e robots=off -r -nH --no-parent --reject='index.html*' "$@" ;
+}
+
 alias scrape='wget -e robots=off -r -nH --cut-dirs=2 --no-parent --reject="index.html*"'
 
 alias epoch='date +%s'
