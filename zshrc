@@ -87,11 +87,22 @@ function download-web() {
 	wget --user-agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0" -e robots=off -r -nH --no-parent --reject='index.html*' "$@" ;
 }
 
+alias yc='links https://news.ycombinator.com'
+
+if [ -d "/home/tlhunter/Desktop" ]; then
+	rmdir /home/tlhunter/Desktop
+fi
+if [ -d "/home/tlhunter/desktop" ]; then
+	rmdir /home/tlhunter/desktop
+fi
+
 alias scrape='wget -e robots=off -r -nH --cut-dirs=2 --no-parent --reject="index.html*"'
 
 alias epoch='date +%s'
 
 alias o='xdg-open'
+
+alias docker-stop-all='docker stop $(docker ps -a -q)'
 
 # If not running tmux, run tmux and attach to a session named "main"
 if [ "$TMUX" = "" ]; then
