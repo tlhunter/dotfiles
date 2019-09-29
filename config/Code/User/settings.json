@@ -9,5 +9,7 @@
     "workbench.colorTheme": "Hybrid Next (Gray Background)",
     "editor.autoClosingBrackets": false,
     "editor.minimap.enabled": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 0,
+    "workbench.statusBar.feedback.visible": false
 }

@@ -29,7 +29,7 @@
     <primaryMonitor>1</primaryMonitor>
   </placement>
   <theme>
-    <name>Artwiz-boxed</name>
+    <name>Onyx-black</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
@@ -217,13 +217,13 @@
     <!-- Terminal -->
     <keybind key="W-t">
       <action name="Execute">
-        <execute>uxterm</execute>
+        <execute>uxterm -T "Terminal"</execute>
       </action>
     </keybind>
     <!-- Web Browser -->
     <keybind key="W-w">
       <action name="Execute">
-        <execute>firefox</execute>
+        <execute>/opt/firefox/firefox</execute>
       </action>
     </keybind>
     <!-- Executioner -->
@@ -260,7 +260,7 @@
     </keybind>
     <keybind key="W-c">
       <action name="Execute">
-        <execute>xcalc</execute>
+        <execute>gnome-calculator</execute>
       </action>
     </keybind>
     <keybind key="W-S-p">

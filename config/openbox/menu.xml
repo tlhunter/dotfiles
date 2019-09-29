@@ -4,7 +4,7 @@
 
 <menu id="root-menu" label="Openbox 3">
   <item label="terminal">
-    <action name="Execute"><execute>uxterm</execute></action>
+    <action name="Execute"><execute>uxterm -T "Terminal"</execute></action>
   </item>
 
   <item label="calculator">
@@ -12,30 +12,64 @@
   </item>
 
   <item label="postman">
-    <action name="Execute"><execute>postman</execute></action>
+    <action name="Execute"><execute>~/.bin/Postman/Postman</execute></action>
   </item>
 
   <item label="firefox">
-    <action name="Execute"><execute>firefox</execute></action>
+    <action name="Execute"><execute>/opt/firefox/firefox</execute></action>
   </item>
 
   <item label="chrome">
     <action name="Execute"><execute>google-chrome-beta</execute></action>
   </item>
 
-  <item label="markdown">
-    <action name="Execute"><execute>remarkable</execute></action>
+  <item label="irc">
+    <action name="Execute"><execute>hexchat</execute></action>
+  </item>
+
+  <item label="virtualbox">
+    <action name="Execute"><execute>virtualbox</execute></action>
   </item>
 
   <separator />
 
-  <menu id="screen_record" label="screen record">
-    <item label="kazam (video + audio)">
-      <action name="Execute"><execute>kazam</execute></action>
+  <menu id="writing" label="writing">
+    <item label="manuskript">
+      <action name="Execute"><execute>manuskript</execute></action>
     </item>
 
-    <item label="peek (gif)">
-      <action name="Execute"><execute>peek</execute></action>
+    <item label="remarkable">
+      <action name="Execute"><execute>remarkable</execute></action>
+    </item>
+
+    <item label="artha">
+      <action name="Execute"><execute>artha</execute></action>
+    </item>
+  </menu>
+
+  <menu id="gamedev" label="gamedev">
+    <item label="fl studio">
+      <action name="Execute"><execute>wine /home/tlhunter/.wine/drive_c/Program\ Files\ \(x86\)/Image-Line/FL\ Studio\ 12/FL64.exe</execute></action>
+    </item>
+
+    <item label="bm font">
+      <action name="Execute"><execute>wine /home/tlhunter/.wine/drive_c/Program\ Files\ \(x86\)/AngelCode/BMFont/bmfont.exe</execute></action>
+    </item>
+
+    <item label="tiled">
+      <action name="Execute"><execute>/opt/tiled/tiled</execute></action>
+    </item>
+
+    <item label="gimp">
+      <action name="Execute"><execute>gimp</execute></action>
+    </item>
+
+    <item label="grafx2">
+      <action name="Execute"><execute>grafx2 -mode 1920x1080 -quadruple</execute></action>
+    </item>
+
+    <item label="android">
+      <action name="Execute"><execute>/opt/android-studio/bin/studio.sh</execute></action>
     </item>
   </menu>
 
@@ -48,8 +82,8 @@
       <action name="Execute"><execute>code</execute></action>
     </item>
 
-    <item label="leafpad">
-      <action name="Execute"><execute>leafpad</execute></action>
+    <item label="xed">
+      <action name="Execute"><execute>xed</execute></action>
     </item>
   </menu>
 
@@ -85,9 +119,28 @@
     </item>
   </menu>
 
+  <menu id="screen_record" label="record">
+    <item label="kazam (video + audio)">
+      <action name="Execute"><execute>kazam</execute></action>
+    </item>
+
+    <item label="peek (gif)">
+      <action name="Execute"><execute>peek</execute></action>
+    </item>
+  </menu>
+
+  <!--
   <menu id="games" label="games">
     <item label="Steam">
       <action name="Execute"><execute>steam</execute></action>
+    </item>
+
+    <item label="Brogue">
+      <action name="Execute"><execute>/opt/brogue/brogue</execute></action>
+    </item>
+
+    <item label="Dungeon Crawl">
+      <action name="Execute"><execute>crawl-tiles</execute></action>
     </item>
 
     <item label="Minecraft">
@@ -98,16 +151,20 @@
       <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/doom.wad</execute></action>
     </item>
 
-    <item label="Doom II Ultimate">
+    <item label="Doom II">
       <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/doom2.wad</execute></action>
     </item>
 
+    <item label="Doom II Ultimate">
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/doomu.wad</execute></action>
+    </item>
+
     <item label="Doom Plutonia">
-      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/Plutonia.wad</execute></action>
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/plutonia.wad</execute></action>
     </item>
 
     <item label="Doom TNT: Evilution">
-      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/Tnt.wad</execute></action>
+      <action name="Execute"><execute>doomsday -game jdoom -file /usr/share/doom/tnt.wad</execute></action>
     </item>
 
     <item label="Heretic">
@@ -116,6 +173,10 @@
 
     <item label="Hexen">
       <action name="Execute"><execute>doomsday -game jhexen -file /usr/share/doom/hexen.wad</execute></action>
+    </item>
+
+    <item label="Hexen: Deathkings">
+      <action name="Execute"><execute>doomsday -game jhexen -file /usr/share/doom/hexdd.wad</execute></action>
     </item>
 
     <item label="Quake I">
@@ -130,6 +191,7 @@
       <action name="Execute"><execute>quake3</execute></action>
     </item>
   </menu>
+  -->
 
   <menu id="network" label="network">
     <item label="filezilla">
@@ -150,29 +212,38 @@
   </menu>
 
   <menu id="config" label="config">
-    <menu id="/Debian" />
+
+    <menu id="/Debian" label="GUI Apps" />
 
     <menu id="client-list-menu" />
 
     <separator />
 
-    <item label="lxappearance">
+    <item label="themes">
       <action name="Execute"><execute>lxappearance</execute></action>
     </item>
 
-    <item label="obconf">
+    <item label="windows">
       <action name="Execute"><execute>obconf</execute></action>
     </item>
 
-    <item label="xfce4-display-settings">
+    <item label="displays">
       <action name="Execute"><execute>xfce4-display-settings</execute></action>
     </item>
 
-    <separator />
+    <item label="power">
+      <action name="Execute"><execute>xfce4-power-manager-settings</execute></action>
+    </item>
+
+    <item label="wireless">
+      <action name="Execute"><execute>stterm -e nmtui connect</execute></action>
+    </item>
 
     <item label="teensy">
       <action name="Execute"><execute>~/.bin/teensy</execute></action>
     </item>
+
+    <separator />
 
     <item label="reconfigure">
       <action name="Reconfigure" />
@@ -193,20 +264,32 @@
     <action name="Exit" />
   </item>
 
-  <item label="suspend">
-    <action name="Execute"><execute>gksudo --disable-grab -- pm-suspend</execute></action>
+  <item label="suspend (ram)">
+    <action name="Execute">
+      <prompt>Suspend?</prompt>
+      <execute>pm-suspend</execute>
+    </action>
   </item>
 
-  <item label="hibernate">
-    <action name="Execute"><execute>gksudo --disable-grab -- pm-hibernate</execute></action>
+  <item label="hibernate (disk)">
+    <action name="Execute">
+      <execute>pm-hibernate</execute>
+      <prompt>Hibernate?</prompt>
+    </action>
   </item>
 
   <item label="reboot">
-    <action name="Execute"><execute>gksudo --disable-grab -- reboot</execute></action>
+    <action name="Execute">
+      <execute>reboot</execute>
+      <prompt>Reboot?</prompt>
+    </action>
   </item>
 
   <item label="shutdown">
-    <action name="Execute"><execute>gksudo --disable-grab -- shutdown -P now</execute></action>
+    <action name="Execute">
+      <execute>shutdown -P now</execute>
+      <prompt>Shutdown?</prompt>
+    </action>
   </item>
 </menu>
 
