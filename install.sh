@@ -14,5 +14,6 @@ ln -s ~/.dotfiles/xinitrc ~/.xinitrc
 ln -s ~/.dotfiles/config/openbox ~/.config/openbox
 ln -s ~/.dotfiles/config/terminator ~/.config/terminator
 ln -s ~/.dotfiles/config/tint2 ~/.config/tint2
+ln -s ~/.dotfiles/config/fusuma ~/.config/fusuma
 
 # OS X Only

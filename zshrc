@@ -75,7 +75,7 @@ alias gra='git remote add'
 alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
-alias ag='/usr/bin/ag --path-to-agignore .agignore'
+#alias ag='/usr/bin/ag --path-to-agignore .agignore'
 
 # Usage: gwho Thomas, gets list of all commits over past year
 function gwho() {
@@ -89,12 +89,12 @@ function download-web() {
 
 alias yc='links https://news.ycombinator.com'
 
-if [ -d "/home/tlhunter/Desktop" ]; then
-	rmdir /home/tlhunter/Desktop
-fi
-if [ -d "/home/tlhunter/desktop" ]; then
-	rmdir /home/tlhunter/desktop
-fi
+# if [ -d "/home/tlhunter/Desktop" ]; then
+#     rmdir /home/tlhunter/Desktop
+# fi
+# if [ -d "/home/tlhunter/desktop" ]; then
+#     rmdir /home/tlhunter/desktop
+# fi
 
 alias scrape='wget -e robots=off -r -nH --cut-dirs=2 --no-parent --reject="index.html*"'
 
@@ -106,7 +106,11 @@ alias docker-stop-all='docker stop $(docker ps -a -q)'
 
 # If not running tmux, run tmux and attach to a session named "main"
 if [ "$TMUX" = "" ]; then
-	tmux attach -t main || tmux new -s main;
+	# tmux attach -t main || tmux new -s main;
 else
 	alias clear='clear && tmux clear-history'
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

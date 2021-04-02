@@ -5,9 +5,14 @@
 .orig
 .rej
 
+# Kate
+*.kate-swp
+
 #OS X Leftover Crap
 ._*
 .DS_Store
+
+.directory
 
 .cvsignore
 

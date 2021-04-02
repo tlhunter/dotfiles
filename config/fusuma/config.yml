@@ -1,0 +1,21 @@
+# These commands assume use of KDE
+swipe:
+  3:
+    left:
+      command: "xdotool key --clearmodifiers XF86Back" # History backward
+    right:
+      command: "xdotool key --clearmodifiers XF86Forward" # History forward
+    up:
+      command: "xdotool key --clearmodifiers Super+Page_Up" # Toggle Maximize
+    down:
+      command: "xdotool key --clearmodifiers Super+Page_Down" # Minimize window
+  4:
+    left:
+      command: "xdotool key --clearmodifiers Super+Shift+Left" # Cycle left desktop
+    right:
+      command: "xdotool key --clearmodifiers Super+Shift+Right" # Cycle right desktop
+    up:
+      command: "xdotool key --clearmodifiers Super+Shift+Up" # View windows on all desktops
+    down:
+      command: "xdotool key --clearmodifiers Super+d" # Show desktop
+      # command: "xdotool key Ctrl+F10" # Show all windows from all desktops combined
