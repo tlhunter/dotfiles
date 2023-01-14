@@ -20,3 +20,5 @@
 	line-graphics = "utf-8"
 [fetch]
 	prune = true
+[pager]
+	branch = false
