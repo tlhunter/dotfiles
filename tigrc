@@ -1,0 +1,5 @@
+set ignore-case = smart-case
+bind generic g  none
+bind generic gg move-first-line
+bind generic G move-last-line
+bind main G move-last-line
